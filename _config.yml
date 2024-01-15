@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Chenghao Zhang - Homepage"
+title                    : "Homepage"
 title_separator          : "-"
 name                     : &name "Your Name"
 description              : &description "personal description"
@@ -107,7 +107,7 @@ author:
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
-  steam            : "233080706"
+  steam            : 
   tumblr           :
   twitter          : "SnowNation_"
   vine             :
