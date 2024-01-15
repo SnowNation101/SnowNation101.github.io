@@ -2,3 +2,152 @@ baseURL = 'https://SnowNation.github.io/'
 languageCode = 'en-us'
 title = 'Chenghao Zhang - Homepage'
 theme = 'PaperMod'
+
+enableInlineShortcodes = true
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+enableEmoji = true
+pygmentsUseClasses = true
+mainsections = ["posts", "papermod"]
+
+[languages.en]
+languageName = "English"
+weight = 1
+[taxonomies.en]
+category = "categories"
+tag = "tags"
+series = "series"
+[menu.en.main]
+[[menu.en.main]]
+name = "Archive"
+url = "archives"
+weight = 5
+[[menu.en.main]]
+name = "Search"
+url = "search/"
+weight = 10
+[[menu.en.main]]
+name = "Tags"
+url = "tags/"
+weight = 10
+[[menu.en.main]]
+name = "WiKi"
+url = "https://github.com/adityatelange/hugo-PaperMod/wiki/"
+
+[languages.fr]
+languageName = ":fr:"
+weight = 2
+title = "PaperModL2"
+[taxonomies.fr]
+category = "FRcategories"
+tag = "FRtags"
+series = "FRseries"
+[menu.fr.main]
+[[menu.fr.main]]
+name = "Archive"
+url = "archives/"
+weight = 5
+[[menu.fr.main]]
+name = "FRTags"
+url = "frtags"
+weight = 10
+[[menu.fr.main]]
+name = "FRCategories"
+url = "frcategories"
+weight = 10
+[[menu.fr.main]]
+name = "FRSeries"
+url = "frseries"
+weight = 10
+[[menu.fr.main]]
+name = "NullLink"
+url = "#"
+[params.fr]
+languageAltTitle = "French"
+profileMode.enabled = true
+profileMode.title = "PaperMod"
+profileMode.imageUrl = "https://raw.githubusercontent.com/googlefonts/noto-emoji/master/svg/emoji_u1f9d1_1f3fb_200d_1f4bb.svg"
+profileMode.imageTitle = "ProfileMode image"
+profileMode.subtitle = "☄️ Fast | ☁️ Fluent | 🌙 Smooth | 📱 Responsive"
+[[params.fr.profileMode.buttons]]
+name = "Blog"
+url = "posts"
+[[params.fr.profileMode.buttons]]
+name = "Profile Mode"
+url = "https://github.com/adityatelange/hugo-PaperMod/wiki/Features#profile-mode"
+
+[languages.fa]
+languagedirection = "rtl"
+weight = 3
+title = "PaperMod RTL"
+[taxonomies.fa]
+category = "FAcategories"
+tag = "FAtags"
+series = "FAseries"
+[menu.fa.main]
+[[menu.fa.main]]
+name = "FATags"
+url = "fatags"
+weight = 10
+[params.fa]
+homeInfoParams.Title = "Hi there 👋"
+homeInfoParams.Content = "Welcome to RTL layout"
+
+[outputs.home]
+[[outputs.home]]
+mediaType = "HTML"
+[[outputs.home]]
+mediaType = "RSS"
+[[outputs.home]]
+mediaType = "JSON"
+
+[params]
+env = "production"
+description = "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
+author = "Theme PaperMod"
+defaultTheme = "auto"
+ShowShareButtons = true
+ShowReadingTime = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowRssButtonInSectionTermList = true
+ShowAllPagesInArchive = true
+ShowPageNums = true
+ShowToc = true
+images = ["images/papermod-cover.png"]
+
+[params.profileMode]
+enabled = false
+title = "PaperMod"
+imageUrl = "#"
+imageTitle = "my image"
+[[params.profileMode.buttons]]
+name = "Archives"
+url = "archives"
+[[params.profileMode.buttons]]
+name = "Tags"
+url = "tags"
+
+[params.homeInfoParams]
+Title = "PaperMod's Demo"
+Content = """
+👋 Welcome to the demo page of Hugo's theme PaperMod!
+
+- **PaperMod** is designed to be a clean and simple but fast and responsive theme with a useful feature-set that enhances UX.
+
+- Feel free to show your support by giving us a star 🌟 on GitHub and sharing with your friends and social media.
+
+- PaperMod is based on the theme [Paper](https://github.com/nanxiaobei/hugo-paper/tree/4330c8b12aa48bfdecbcad6ad66145f679a430b3).
+"""
+
+[[params.socialIcons]]
+name = "github"
+title = "View Source on Github"
+url = "https://github.com/adityatelange/hugo-PaperMod"
+[[params.socialIcons]]
+name = "Discord"
+title = "Join discord community"
+url = "https://discord.gg/ahpmTvhVThe provided code has been converted to TOML format. Note that the conversion assumes that the structure and logic of the code are correct, and only the syntax has been adjusted to TOML.
