@@ -1,0 +1,4 @@
+baseURL = 'https://SnowNation.github.io/'
+languageCode = 'en-us'
+title = 'Chenghao Zhang - Homepage'
+theme = 'PaperMod'
