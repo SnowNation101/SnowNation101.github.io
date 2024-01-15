@@ -1,7 +1,7 @@
 ---
 title: "INTERS: Unlocking the Power of Large Language Models in Search with Instruction Tuning"
 collection: publications
-permalink: /publication/2009-10-01-paper-title-number-1
+permalink: /publication/INTERS
 excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
 date: 2024-01-15
 venue: 'Journal 1'
