@@ -54,7 +54,7 @@ author:
   goodreads        : # Username
   google_plus      : # Username
   keybase          : # Username
-  instagram        : "_snownation_" # Username
+  instagram        : # Username
   lastfm           : # Username
   linkedin         : # Username
   mastodon         : # URL
@@ -64,9 +64,9 @@ author:
   steam            : "crazywizard" # Username
   telegram         : # URL
   tumblr           : # Username
-  twitter          : "SnowNation_" # Username for X / Twitter
+  twitter          : # Username for X / Twitter
   vine             : # Username
-  weibo            : "3803042543" # Username
+  weibo            : # Username
   wikipedia        : # Username
   xing             : # Username
   youtube          : # Username
