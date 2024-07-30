@@ -19,7 +19,7 @@ My Self-Introduction My Self-Introduction My Self-Introduction
 My Self-Introduction My Self-Introduction My Self-Introduction
 
 # The Gods Themselves
-- B.S. in SCS, BUPT, 2020-2024
-- Ph.D in GSAI, RUC, 2024-now
+- B.E. in SCS, BUPT, 2020-2024
+- Ph.D. in GSAI, RUC, 2024-now
 
 # Contend in Vain
