@@ -1,11 +1,12 @@
 ---
 title: "INTERS: Unlocking the Power of Large Language Models in Search with Instruction Tuning"
+author: Yutao Zhu, Peitian Zhang, Chenghao Zhang, Yifei Chen, Binyu Xie, Zhicheng Dou, Zheng Liu, Ji-Rong Wen
 collection: publications
-permalink: /publication/2009-10-01-paper-title-number-1
+permalink: /publication/inters
 excerpt: 'Instruction tuning dataset for IR'
 date: 2024-02-19
-venue: 'arXiv'
-paperurl: 'http://academicpages.github.io/files/paper1.pdf'
+venue: 'ACL 2024'
+paperurl: 'http://snownation101.github.io/files/INTERS.pdf'
 citation: 'Yutao Zhu, Peitian Zhang, Chenghao Zhang, Yifei Chen, Binyu Xie, Zhicheng Dou, Zheng Liu, Ji-Rong Wen: INTERS: Unlocking the Power of Large Language Models in Search with Instruction Tuning. CoRR abs/2401.06532 (2024)'
 ---
 
