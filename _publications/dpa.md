@@ -2,7 +2,7 @@
 title: "Understand What LLM Needs: Dual Preference Alignment for Retrieval-Augmented Generation"
 collection: publications
 permalink: /publication/dpa
-excerpt: 'Instruction tuning dataset for IR'
+excerpt: 'DPA-RAG is a universal framework for aligning diverse preference knowledge within RAG systems, consisting of three main components: Preference Knowledge Construction, Reranker-LLM Alignment and LLM Self-Alignment.'
 date: 2024-07-18
 venue: 'arXiv'
 paperurl: 'http://snownation101.github.io/files/DPA.pdf'
