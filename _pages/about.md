@@ -54,22 +54,27 @@ redirect_from:
 ## Education
 
 <div class="sans-main">
-  <ul>
-    <li>B.E. in Software Engineering, School of Computer Science, Beijing University of Posts and Telecommunications, 2020 - 2024</li>
-    <li>Ph.D. in Gaoling School of Artificial Intelligence, Renmin University of China, 2024 - present</li>
-  </ul>
+<ul>
+  <li>B.E. in Software Engineering, School of Computer Science, Beijing University of Posts and Telecommunications, 2020 - 2024</li>
+  <li>Ph.D. in Gaoling School of Artificial Intelligence, Renmin University of China, 2024 - present</li>
+</ul>
 </div>
 
 ## Publications
 
 ### 2025
 
-Still working on it 🥲
+<div class="sans-main">
+  Still working on it 🥲
+</div>
 
 ### 2024
 
-- Progressive multimodal reasoning via active retrieval
-- Understand what LLM needs: Dual preference alignment for retrieval-augmented generation
-- FlashRAG: A modular toolkit for efficient retrieval-augmented generation research
-- INTERS: unlocking the power of large language models in search with instruction tuning
-
+<div class="sans-main">
+<ul>
+  <li>Progressive multimodal reasoning via active retrieval
+  <li>Understand what LLM needs: Dual preference alignment for retrieval-augmented generation
+  <li>FlashRAG: A modular toolkit for efficient retrieval-augmented generation research
+  <li>INTERS: unlocking the power of large language models in search with instruction tuning
+</ul>
+</div>
