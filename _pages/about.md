@@ -8,15 +8,18 @@ redirect_from:
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+
+
 
 <style>
   .quote {
     color: gray;
     font-size: 24px;
     font-style: normal;
-    font-family: "Gloria Hallelujah", cursive;
+    font-family: "Merriweather", serif;
     padding: 15px;
     margin: 40px auto;
     max-width: 700px;
@@ -25,7 +28,7 @@ redirect_from:
   }
 
   .sans-main {
-    font-family: "Josefin Sans", sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 18px;
@@ -58,16 +61,14 @@ redirect_from:
 </style>
 
 <div class="quote">
-  "Against stupidity the very gods<br>
-  Themselves contend in vain."<br>
-  — Friedrich Schiller
+  " Against stupidity the very gods<br>
+  Themselves contend in vain. "<br>
+  —— Friedrich Schiller
 </div>
 
 <h2>About Me</h2>
 <div class="sans-main">
-  👋 Greetings! I'm <strong>Chenghao David Zhang</strong>, a 📚 Ph.D. student at the <a href="http://ai.ruc.edu.cn/">Gaoling School of Artificial Intelligence, Renmin University of China</a>, under the supervision of <a href="http://playbigdata.ruc.edu.cn/dou/">Prof. Zhicheng Dou</a>.<br><br>
-  I earned my 🎓 B.E. degree in Software Engineering from the <a href="https://scs.bupt.edu.cn/index.htm">School of Computer Science, Beijing University of Posts and Telecommunications</a> in 2024.<br><br>
-  My research focuses on 🌈 <strong>multimodal information retrieval</strong> and 🌐 <strong>large language models</strong>. I'm also passionate about 🎮 computer graphics, even though it's not my primary research area.
+  👋 Greetings! I'm <strong>Chenghao David Zhang</strong>, a 📚 Ph.D. student at the <a href="http://ai.ruc.edu.cn/">Gaoling School of Artificial Intelligence, Renmin University of China</a>, under the supervision of <a href="http://playbigdata.ruc.edu.cn/dou/">Prof. Zhicheng Dou</a>. I earned my 🎓 B.E. degree in Software Engineering from the <a href="https://scs.bupt.edu.cn/index.htm">School of Computer Science, Beijing University of Posts and Telecommunications</a> in 2024. My research focuses on 🌈 <strong>multimodal information retrieval</strong> and 🌐 <strong>large language models</strong>. I'm also passionate about 🎮 computer graphics, even though it's not my primary research area.
 </div>
 
 <h2>Education</h2>
