@@ -69,13 +69,14 @@
               <br>
                 <strong>Chenghao Zhang</strong>, Guanting Dong, Xinyu Yang, Zhicheng Dou
               <br>
-              <em>arXiv</em>, Oct. 2025
+              <em>SIGIR</em>, 2026
               <br>
               <a href="https://arxiv.org/pdf/2510.17354">arXiv</a> |
+              <a href="data/nyx.bib" class="bibtex-trigger" data-bib-url="data/nyx.bib">bibtex</a> |
               <a href="https://github.com/SnowNation101/Nyx">github</a> |
               <a href="https://huggingface.co/collections/SnowNation/nyx">hf collection</a> |
               <a href="https://huggingface.co/papers/2510.17354">hf paper</a>
-              <p>We proposed Nyx, a unified mixed-modal retriever tailored for URAG scenarios, and constructed NyxQA, a large-scale mixed-modal QA dataset.</p>
+              <p>We propose the innovative problem of Universal Retrieval-Augmented Generation (URAG). Along with this new paradigm, we present Nyx, a unified mixed-modal retriever tailored for URAG, and NyxQA, a corresponding large-scale mixed-modal dataset for benchmarking and training.</p>
               </td>
             </tr>
 
@@ -92,7 +93,8 @@
               <br>
               <em>ACL</em>, 2026
               <br>
-              <a href="https://arxiv.org/pdf/2412.14835">arXiv</a>
+              <a href="https://arxiv.org/pdf/2412.14835">arXiv</a> |
+              <a href="data/ar-mcts.bib" class="bibtex-trigger" data-bib-url="data/ar-mcts.bib">bibtex</a>
               <p>A framework designed to progressively improve the reasoning capabilities of MLLMs through Active Retrieval (AR) and Monte Carlo Tree Search (MCTS). </p>
               </td>
             </tr>
@@ -111,6 +113,7 @@
               <em>WWW</em>, Short-Paper, 2025
               <br>
               <a href="https://arxiv.org/abs/2405.13576">arXiv</a> |
+              <a href="data/flashrag.bib" class="bibtex-trigger" data-bib-url="data/flashrag.bib">bibtex</a> |
               <a href="https://github.com/RUC-NLPIR/FlashRAG">github project</a>
               <p>A Python toolkit for the reproduction and development of RAG research. Including 36 pre-processed benchmark RAG datasets and 23 state-of-the-art RAG algorithms, and 7 reasoning-based methods that combine reasoning ability with retrieval.</p>
               </td>
@@ -129,7 +132,8 @@
               <br>
               <em>WWW</em>, 2025
               <br>
-              <a href="https://arxiv.org/pdf/2406.18676">arXiv</a>
+              <a href="https://arxiv.org/pdf/2406.18676">arXiv</a> |
+              <a href="data/dpa-rag.bib" class="bibtex-trigger" data-bib-url="data/dpa-rag.bib">bibtex</a>
               <p>A framework designed to align diverse knowledge preferences within RAG systems</p>
               </td>
             </tr>
@@ -155,7 +159,7 @@
               <em>ACL</em>, 2024
               <br>
               <a href="https://arxiv.org/pdf/2401.06532">arXiv</a> |
-              <a href="data/inters.bib">bibtex</a> |
+              <a href="data/inters.bib" class="bibtex-trigger" data-bib-url="data/inters.bib">bibtex</a> |
               <a href="https://github.com/DaoD/INTERS">code</a> |
               <a href="https://huggingface.co/datasets/yutaozhu94/INTERS">dataset</a>
               <p>A novel instruction tuning dataset, INTERS, encompassing 20 tasks across three fundamental IR categories: query understanding, document understanding, and query-document relationship understanding. The data are derived from 43 distinct datasets with manually written templates.</p>
@@ -169,10 +173,12 @@
             <tr>
               <td>
                 <h2>Services</h2>
-                <!-- <h3>Reviewers</h3>
-                <p>ACL, NIPS, ICLR</p> -->
+                <h3>Reviewers</h3>
+                <ul>
+                  <li>ARR Jan 2026, SIGIR 2026, ARR March 2026</li>
+                </ul>
                 <h3>Teaching Assistant</h3>
-                <ul style="text-align:justify;height: 150px;">
+                <ul>
                   <li>Data Structures and Algorithms, 2024 Fall</li>
                   <li>Few Shot Learning, 2025 Fall</li>
                 </ul>
@@ -180,8 +186,8 @@
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-						
-					  
+
+
             
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -196,5 +202,126 @@
         </td>
       </tr>
     </table>
+
+    <div class="bibtex-modal" id="bibtex-modal" hidden>
+      <div class="bibtex-modal__backdrop" data-close-bibtex></div>
+      <div class="bibtex-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="bibtex-modal-title">
+        <div class="bibtex-modal__header">
+          <h3 id="bibtex-modal-title">BibTeX</h3>
+          <button type="button" class="bibtex-modal__close" aria-label="Close BibTeX dialog" data-close-bibtex>&times;</button>
+        </div>
+        <p class="bibtex-modal__hint">Click inside the box to review the citation, or use the button to copy it directly.</p>
+        <textarea id="bibtex-content" class="bibtex-modal__textarea" readonly spellcheck="false"></textarea>
+        <div class="bibtex-modal__actions">
+          <button type="button" class="bibtex-modal__button" id="copy-bibtex-button">Copy BibTeX</button>
+          <a id="open-bibtex-file" class="bibtex-modal__raw-link" href="data/inters.bib" target="_blank" rel="noopener noreferrer">Open raw file</a>
+          <span id="bibtex-status" class="bibtex-modal__status" aria-live="polite"></span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const bibtexModal = document.getElementById('bibtex-modal');
+      const bibtexTitle = document.getElementById('bibtex-modal-title');
+      const bibtexContent = document.getElementById('bibtex-content');
+      const bibtexStatus = document.getElementById('bibtex-status');
+      const copyBibtexButton = document.getElementById('copy-bibtex-button');
+      const openBibtexFile = document.getElementById('open-bibtex-file');
+      const bibtexTriggers = document.querySelectorAll('.bibtex-trigger');
+      let activeBibtexUrl = '';
+
+      function fallbackCopyBibtex() {
+        bibtexContent.focus();
+        bibtexContent.select();
+        bibtexContent.setSelectionRange(0, bibtexContent.value.length);
+
+        try {
+          return document.execCommand('copy');
+        } catch (error) {
+          return false;
+        }
+      }
+
+      async function openBibtexModal(url, title) {
+        activeBibtexUrl = url;
+        bibtexTitle.textContent = 'BibTeX';
+        bibtexContent.value = 'Loading citation...';
+        bibtexContent.scrollTop = 0;
+        bibtexStatus.textContent = '';
+        openBibtexFile.href = url;
+        bibtexModal.hidden = false;
+        document.body.classList.add('modal-open');
+
+        try {
+          const response = await fetch(url);
+          if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`);
+          }
+          const text = await response.text();
+          bibtexContent.value = text.trim();
+          bibtexContent.focus({ preventScroll: true });
+          bibtexContent.setSelectionRange(0, 0);
+          bibtexContent.scrollTop = 0;
+        } catch (error) {
+          bibtexContent.value = 'Unable to load this BibTeX entry right now. You can still open the raw file using the link below.';
+          bibtexContent.focus({ preventScroll: true });
+          bibtexContent.setSelectionRange(0, 0);
+          bibtexContent.scrollTop = 0;
+          bibtexStatus.textContent = 'Load failed';
+        }
+      }
+
+      function closeBibtexModal() {
+        bibtexModal.hidden = true;
+        document.body.classList.remove('modal-open');
+        bibtexStatus.textContent = '';
+      }
+
+      bibtexTriggers.forEach((trigger) => {
+        trigger.addEventListener('click', (event) => {
+          event.preventDefault();
+          openBibtexModal(trigger.dataset.bibUrl, trigger.dataset.bibTitle);
+        });
+      });
+
+      document.querySelectorAll('[data-close-bibtex]').forEach((element) => {
+        element.addEventListener('click', closeBibtexModal);
+      });
+
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && !bibtexModal.hidden) {
+          closeBibtexModal();
+        }
+      });
+
+      copyBibtexButton.addEventListener('click', async () => {
+        const text = bibtexContent.value.trim();
+        if (!text || text === 'Loading citation...' || !activeBibtexUrl) {
+          return;
+        }
+
+        try {
+          if (navigator.clipboard && window.isSecureContext) {
+            await navigator.clipboard.writeText(text);
+            bibtexStatus.textContent = 'Copied';
+            return;
+          }
+
+          if (fallbackCopyBibtex()) {
+            bibtexStatus.textContent = 'Copied';
+            return;
+          }
+
+          bibtexStatus.textContent = 'Copy failed';
+        } catch (error) {
+          if (fallbackCopyBibtex()) {
+            bibtexStatus.textContent = 'Copied';
+            return;
+          }
+
+          bibtexStatus.textContent = 'Copy failed';
+        }
+      });
+    </script>
   </body>
 </html>

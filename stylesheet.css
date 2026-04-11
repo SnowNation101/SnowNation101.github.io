@@ -140,3 +140,114 @@ span.highlight {
     display: inline-block;
     border-radius: 10px;
 }
+
+
+/* For bibtex modal */
+body.modal-open {
+  overflow: hidden;
+}
+
+.bibtex-modal[hidden] {
+  display: none;
+}
+
+.bibtex-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+}
+
+.bibtex-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.bibtex-modal__dialog {
+  position: relative;
+  width: min(660px, calc(100vw - 32px));
+  margin: 8vh auto;
+  background: #ffffff;
+  border: 1px solid #d0d7de;
+  border-radius: 0;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.14);
+  padding: 18px 18px 16px;
+}
+
+.bibtex-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.bibtex-modal__header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.bibtex-modal__close {
+  border: 1px solid #d0d7de;
+  background: #ffffff;
+  color: #666;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 2px 8px;
+  border-radius: 0;
+}
+
+.bibtex-modal__hint {
+  margin: 12px 0 12px;
+  color: #666;
+}
+
+.bibtex-modal__textarea {
+  width: 100%;
+  min-height: 260px;
+  resize: vertical;
+  border: 1px solid #d0d7de;
+  border-radius: 0;
+  padding: 14px;
+  box-sizing: border-box;
+  background: #fafafa;
+  color: #222;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.bibtex-modal__actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.bibtex-modal__button {
+  border: 1px solid #1772d0;
+  border-radius: 0;
+  background: #ffffff;
+  color: #1772d0;
+  padding: 8px 14px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.bibtex-modal__button:hover,
+.bibtex-modal__button:focus {
+  background: #f3f8fe;
+}
+
+.bibtex-modal__raw-link {
+  color: #666;
+}
+
+.bibtex-modal__status {
+  color: #1772d0;
+  min-height: 1em;
+}
