@@ -67,7 +67,7 @@
                   <span class="papertitle">Towards Verifiable Multimodal Deep Research: A Multi-Agent Harness for Interleaved Report Generation</span>
                 </a>
                 <br>
-                <strong>Chenghao Zhang</strong>, Guanting Dong, Yufan Liu, Tong Zhao,Zhicheng Dou
+                <span class="publication-authors">Chenghao Zhang, Guanting Dong, Yufan Liu, Tong Zhao, Zhicheng Dou</span>
                 <br>
                 <em>arXiv</em>
                 <br>
@@ -86,7 +86,7 @@
                   <span class="papertitle">ATIR: Towards Audio-Text Interleaved Contextual Retrieval</span>
                 </a>
                 <br>
-                Tong Zhao <strong>Chenghao Zhang</strong>, Yutao Zhu, Zhicheng Dou
+                <span class="publication-authors">Tong Zhao, Chenghao Zhang, Yutao Zhu, Zhicheng Dou</span>
                 <br>
                 <em>ACL</em>, 2026
                 <br>
@@ -105,7 +105,7 @@
                 <span class="papertitle">Towards Mixed-Modal Retrieval for Universal Retrieval-Augmented Generation</span>
               </a>
               <br>
-                <strong>Chenghao Zhang</strong>, Guanting Dong, Xinyu Yang, Zhicheng Dou
+                <span class="publication-authors">Chenghao Zhang, Guanting Dong, Xinyu Yang, Zhicheng Dou</span>
               <br>
               <em>SIGIR</em>, 2026
               <br>
@@ -127,7 +127,7 @@
                 <span class="papertitle">Progressive Multimodal Reasoning via Active Retrieval</span>
               </a>
               <br>
-              Guanting Dong, <strong>Chenghao Zhang</strong>, Mengjie Deng, Yutao Zhu, Zhicheng Dou, Ji-Rong Wen
+              <span class="publication-authors">Guanting Dong, Chenghao Zhang, Mengjie Deng, Yutao Zhu, Zhicheng Dou, Ji-Rong Wen</span>
               <br>
               <em>ACL</em>, 2025
               <br>
@@ -146,7 +146,7 @@
                 <span class="papertitle">FlashRAG: A Modular Toolkit for Efficient Retrieval-Augmented Generation Research</span>
               </a>
               <br>
-              Jiajie Jin, Yutao Zhu, Guanting Dong, Yuyao Zhang, Xinyu Yang, <strong>Chenghao Zhang</strong>, Tong Zhao, Zhao Yang, Zhicheng Dou, Ji-Rong Wen
+              <span class="publication-authors">Jiajie Jin, Yutao Zhu, Guanting Dong, Yuyao Zhang, Xinyu Yang, Chenghao Zhang, Tong Zhao, Zhao Yang, Zhicheng Dou, Ji-Rong Wen</span>
               <br>
               <em>WWW</em>, Short-Paper, 2025
               <br>
@@ -166,7 +166,7 @@
                 <span class="papertitle">Understand what LLM needs: Dual preference alignment for retrieval-augmented generation</span>
               </a>
               <br>
-              Guanting Dong, Yutao Zhu, <strong>Chenghao Zhang</strong>, Zechen Wang, Ji-Rong Wen, Zhicheng Dou
+              <span class="publication-authors">Guanting Dong, Yutao Zhu, Chenghao Zhang, Zechen Wang, Ji-Rong Wen, Zhicheng Dou</span>
               <br>
               <em>WWW</em>, 2025
               <br>
@@ -185,14 +185,8 @@
                 <span class="papertitle">INTERS: Unlocking the Power of Large Language Models in Search with Instruction Tuning</span>
               </a>
               <br>
-              Yutao Zhu,
-              <a href="https://www.namespace-pt.com/">Peitian Zhang</a>,
-              <strong>Chenghao Zhang</strong>,
-              Yifei Chen,
-              Binyu Xie,
-              Zheng Liu,
-              Jirong Wen,
-              Zhicheng Dou
+              <span class="publication-authors">Yutao Zhu, Peitian Zhang, Chenghao Zhang, Yifei Chen, Binyu Xie, Zheng Liu, Jirong Wen, Zhicheng Dou
+              </span>
               <br>
               <em>ACL</em>, 2024
               <br>
@@ -259,6 +253,15 @@
     </div>
 
     <script>
+      const authorHomepageLinks = {
+        'Guanting Dong': 'https://dongguanting.github.io/',
+        'Yutao Zhu': 'https://daod.github.io/',
+        'Zhicheng Dou': 'https://playbigdata.ruc.edu.cn/dou/',
+        'Peitian Zhang': 'https://www.namespace-pt.com/',
+        'Yifei Chen': 'https://asilverlight.github.io/',
+      };
+      const highlightedAuthorName = 'Chenghao Zhang';
+
       const bibtexModal = document.getElementById('bibtex-modal');
       const bibtexTitle = document.getElementById('bibtex-modal-title');
       const bibtexContent = document.getElementById('bibtex-content');
@@ -267,6 +270,70 @@
       const openBibtexFile = document.getElementById('open-bibtex-file');
       const bibtexTriggers = document.querySelectorAll('.bibtex-trigger');
       let activeBibtexUrl = '';
+
+      function linkPublicationAuthors() {
+        const authorNames = Array.from(new Set([
+          ...Object.keys(authorHomepageLinks),
+          highlightedAuthorName,
+        ])).sort((a, b) => b.length - a.length);
+
+        document.querySelectorAll('.publication-authors').forEach((authorsElement) => {
+          const walker = document.createTreeWalker(
+            authorsElement,
+            NodeFilter.SHOW_TEXT,
+            {
+              acceptNode(node) {
+                if (node.parentElement.closest('a')) {
+                  return NodeFilter.FILTER_REJECT;
+                }
+
+                return authorNames.some((name) => node.nodeValue.includes(name))
+                  ? NodeFilter.FILTER_ACCEPT
+                  : NodeFilter.FILTER_REJECT;
+              },
+            }
+          );
+
+          const textNodes = [];
+          while (walker.nextNode()) {
+            textNodes.push(walker.currentNode);
+          }
+
+          textNodes.forEach((node) => {
+            const fragment = document.createDocumentFragment();
+            const pattern = new RegExp(`(${authorNames.map((name) => name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})`, 'g');
+            let lastIndex = 0;
+
+            node.nodeValue.replace(pattern, (match, authorName, offset) => {
+              fragment.append(document.createTextNode(node.nodeValue.slice(lastIndex, offset)));
+
+              let authorElement = document.createTextNode(authorName);
+
+              if (authorHomepageLinks[authorName]) {
+                const link = document.createElement('a');
+                link.href = authorHomepageLinks[authorName];
+                link.textContent = authorName;
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer';
+                authorElement = link;
+              }
+
+              if (authorName === highlightedAuthorName) {
+                const strong = document.createElement('strong');
+                strong.append(authorElement);
+                authorElement = strong;
+              }
+
+              fragment.append(authorElement);
+
+              lastIndex = offset + match.length;
+            });
+
+            fragment.append(document.createTextNode(node.nodeValue.slice(lastIndex)));
+            node.parentNode.replaceChild(fragment, node);
+          });
+        });
+      }
 
       function fallbackCopyBibtex() {
         bibtexContent.focus();
@@ -360,6 +427,8 @@
           bibtexStatus.textContent = 'Copy failed';
         }
       });
+
+      linkPublicationAuthors();
     </script>
   </body>
 </html>
