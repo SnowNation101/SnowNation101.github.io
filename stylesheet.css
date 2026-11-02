@@ -109,6 +109,14 @@ h2 {
   font-size: 32px;
 }
 
+.name-chinese {
+  margin-left: 0.35em;
+  color: #888;
+  font-family: 'Kaiti SC', 'STKaiti', 'KaiTi', '楷体', serif;
+  font-size: 0.85em;
+  white-space: nowrap;
+}
+
 .one {
   width: 160px;
   height: 160px;
